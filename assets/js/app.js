@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(this).removeClass('pulse');
 
     var gridSize = prompt("Enter grid size (max of 64)", "16");
-    if (gridSize > 0 && gridSize <= 100) {
+    if (gridSize > 15 && gridSize <= 64) {
       // $('#draw').empty();
       for (var i = 0; i < gridSize; i++) {
         $('#draw').append('<div class="etch-row"></div>');
@@ -16,7 +16,7 @@ $(document).ready(function() {
       $('.etch-boxes').height(600 / gridSize);
       $('.etch-boxes').width(600 / gridSize);
     } else {
-      alert('lil bitch');
+      alert('Please pick a number from 16-64');
     }
 
     if (!document.getElementById('erase')) {
