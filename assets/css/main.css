@@ -1,0 +1,106 @@
+body {
+  background: #fff;
+}
+.brand-logo, #text {
+  padding-left: 10px;
+  font-weight: 100;
+}
+
+button {
+  background: #ee6e73;
+  transition: background-color .3s;
+  color: #fff;
+  font-weight: 100;
+  padding: 0 20px;
+  border: none;
+}
+
+button.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-panel {
+  height: 600px;
+  width: 600px;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+.etch-row {
+  height: 10px;
+  width: 100%;
+}
+.etch-boxes {
+  background-color: #ee6e73;
+  /*display: inline-block;*/
+  float: left;
+  border-radius: 45%;
+}
+.container {
+  width: 600px;
+}
+.container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row .col {
+  padding: 0;
+}
+.pulse::before {
+  z-index: 1;
+}
+
+
+/* colorpicker styles */
+.colorpicker {
+    background-color: #222222;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 2px #444444;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    width: 460px;
+}
+#picker {
+    cursor: crosshair;
+    float: left;
+    margin: 10px;
+    border: 0;
+}
+.controls {
+    float: right;
+    margin: 10px;
+}
+.controls > div {
+    border: 1px solid #2F2F2F;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+.controls label {
+    float: left;
+}
+.controls > div input {
+    background-color: #121212;
+    border: 1px solid #2F2F2F;
+    color: #DDDDDD;
+    float: right;
+    font-size: 10px;
+    height: 14px;
+    margin-left: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 75px;
+}
+.preview {
+    background: url("../images/select.png") repeat scroll center center transparent;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #444444;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
